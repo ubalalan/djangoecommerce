@@ -19,10 +19,13 @@ from django.urls import path, include
 from store import views
 from dashboard import views
 from finance import views
+from analysis import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('store/' , include('store.urls')),
     path('dashboard/' , include('dashboard.urls')),
     path('finance/' , include('finance.urls')),
+    path('analysis/' , include('analysis.urls')),
 ]
 
