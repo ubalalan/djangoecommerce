@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import dashboard
+from .models import *
 # Register your models here.
 
 admin.site.register(dashboard)
+admin.site.register(product)
